@@ -1,0 +1,104 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: #EBEBEB;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+:host {
+    --color-base: #393737;
+    --color-primary: #FD9629;
+    --color-secundary: #ED003A;
+    --color-default: #222B4E;
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+}
+
+.inner-container {
+    background: #fff;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+aside {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.inner {
+    flex: 1;
+    margin: 20px 0 0 0px;
+    align-self:start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sideNavigation ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.sideNavigation ul li {
+    flex: 1;
+}
+
+.ButtonMd{
+     padding:10px 30px;
+     font-size: .8em;
+}
+
+.btn {
+    cursor: pointer;
+    color: #393737;
+}
+
+.ColorPrimary {
+    background:  #FD9629;
+    color: #fff;
+}
+
+.ColorPrimary:hover  {
+    background:  #f19633;
+}
+
+@media (min-width: 860px) {
+    .inner {
+        flex: 1 1 690px;
+        margin: 0 0 0 20px;
+    }
+    .inner-container {
+            flex: 1 1 690px;
+            flex-direction: row;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+    
+}
