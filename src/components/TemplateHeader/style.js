@@ -28,7 +28,7 @@ export const Header = styled.header`
   }
 
     @media (max-width: 760px) {
-      .Menu ul {
+      .NotMobile {
         display:none!important;
       }
     }
@@ -39,12 +39,12 @@ export const Header = styled.header`
       display:flex;
       list-style:none;
       flex-wrap:wrap;
-      margin: 0 40px 0 0;
+      margin: 5px 40px 0 0;
       
   }
   & .Menu li {
     display: inline-block;
-    padding:0px 0 0 20px;
+    padding:5px 0 0 20px;
   }
 
   & .Menu a {
@@ -52,13 +52,14 @@ export const Header = styled.header`
         text-transform: uppercase;
         font-size: 1em;
         font-weight:400;
-        padding: 10px 0 0 0;
-        display:inline-block;
+        display:flex;
       }
 
-  .btn {
-  
-  }    
+    .Menu a svg {
+      float: right;
+       margin: 3px 0 0 6px;
+    }
+
 `;
 
 export default Header;

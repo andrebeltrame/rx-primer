@@ -17,12 +17,14 @@ export const Aside = styled.aside`
   & li>a {
      padding: 0 0 15px 0;
     text-transform:uppercase;
-    display: block;
+    display: flex;
     color: ${colors.base};
     font-size:.9rem;
+    line-height:1em;
+        align-items: flex-start;
     &:hover {
          color: ${colors.secundary};
-    }
+    }   
   }
 
 `;

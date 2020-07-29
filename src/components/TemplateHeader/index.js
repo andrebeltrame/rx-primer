@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header } from './style';
-import { SignOutIcon, ThreeBarsIcon } from '@primer/octicons-react'
+import { SignOutIcon, ThreeBarsIcon, PlusCircleIcon } from '@primer/octicons-react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/Buttons';
 
@@ -13,12 +13,20 @@ function TemplateHeader() {
                         <h1>Dashboard</h1>
                     </Link>
                     <nav className="Menu">
+
+                        <Link to="/new-recipe">
+                            <Button className="ButtonMd ColorSecundary NotMobile">Cadastrar Receita <PlusCircleIcon size={10} /></Button>
+                        </Link>
+
                         <ul>
-                            <li>
+                            <li className="NotMobile" >
                                 <Link to="/account"> Minha Conta </Link>
                             </li>
+                            <li>
+                                <Link to="/account"> Sair  <SignOutIcon size={15} /> </Link>
+                            </li>
                         </ul>
-                        <Button className="ButtonMd ColorPrimary">Sair <SignOutIcon size={16} /> </Button>
+            
                         <Button className="MobileNav"><ThreeBarsIcon size={25} /></Button>
                     </nav>
                </div>
