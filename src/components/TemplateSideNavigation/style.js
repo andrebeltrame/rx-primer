@@ -24,6 +24,7 @@ export const Aside = styled.aside`
          color: ${colors.secundary};
     }
   }
+
 `;
 
 export default Aside;

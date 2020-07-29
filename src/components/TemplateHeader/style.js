@@ -23,21 +23,28 @@ export const Header = styled.header`
     display:flex
   }
 
+  .Menu {
+    display:flex;
+  }
+
     @media (max-width: 760px) {
-      .Menu {
-        display:none;
+      .Menu ul {
+        display:none!important;
       }
     }
 
+  
 
   & .Menu ul {
       display:flex;
       list-style:none;
-      flex-wrap:wrap
+      flex-wrap:wrap;
+      margin: 0 40px 0 0;
+      
   }
   & .Menu li {
     display: inline-block;
-    padding:10px 0 0 20px;
+    padding:0px 0 0 20px;
   }
 
   & .Menu a {
@@ -48,6 +55,10 @@ export const Header = styled.header`
         padding: 5px 0 0 0;
         display:inline-block;
       }
+
+  .btn {
+  
+  }    
 `;
 
 export default Header;

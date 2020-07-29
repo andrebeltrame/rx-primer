@@ -17,10 +17,8 @@ function TemplateHeader() {
                             <li>
                                 <Link to="/account"> Minha Conta </Link>
                             </li>
-                            <li>
-                                <Button className="ButtonMd ColorPrimary">Sair</Button>
-                            </li>
                         </ul>
+                        <Button className="ButtonMd ColorPrimary">Sair</Button>
                     </nav>
                </div>
             </Header>

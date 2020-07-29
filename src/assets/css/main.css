@@ -85,6 +85,11 @@ aside {
 .btn {
     cursor: pointer;
     color: #393737;
+    outline: none;
+}
+
+.btn:active {
+    outline: none;
 }
 
 .ColorPrimary {
@@ -109,6 +114,13 @@ aside {
 .no-border {
     border-bottom: none!important;
 }
+
+@media (max-width: 760px) {
+    aside {
+        display:none!important;
+    }
+}
+
 
 @media (min-width: 860px) {
     .inner {
