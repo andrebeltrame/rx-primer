@@ -19,7 +19,7 @@ export const Aside = styled.aside`
     text-transform:uppercase;
     display: block;
     color: ${colors.base};
-    font-size:.8rem;
+    font-size:.9rem;
     &:hover {
          color: ${colors.secundary};
     }

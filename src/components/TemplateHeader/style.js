@@ -50,9 +50,9 @@ export const Header = styled.header`
   & .Menu a {
         color: ${colors.white};
         text-transform: uppercase;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight:400;
-        padding: 5px 0 0 0;
+        padding: 10px 0 0 0;
         display:inline-block;
       }
 
