@@ -10,3 +10,4 @@ export const PageTips = () => {
         </>
     )
 }
+export default PageTips;

@@ -101,6 +101,15 @@ aside {
     background:  #f19633;
 }
 
+.ColorSecundary {
+    background:  #ED003A;;
+    color: #fff;
+}
+
+.ColorSecundary:hover {
+background: #f33464;;
+}
+
 .widget {
     
 }
