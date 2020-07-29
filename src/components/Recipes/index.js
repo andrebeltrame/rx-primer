@@ -9,15 +9,41 @@ const RecipesList = () => {
             <ListRecipies>
                <ul>
                     <li>
-                        
                         <Link to="/">
                             <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                            Receita
                         </Link>
-                        
-                        </li>
-                    <li>Receita</li>
-                    <li>Receita</li>
-                    <li>Receita</li>
+                    </li>
+                    <li>
+                        <Link to="/">
+                            <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                            Receita
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/">
+                            <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                            Receita
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/">
+                            <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                            Receita
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/">
+                            <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                            Receita
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/">
+                            <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                            Receita
+                        </Link>
+                    </li>
                </ul>
             </ListRecipies>
         </>

@@ -27,19 +27,12 @@ export const Header = styled.header`
     display:flex;
   }
 
-    @media (max-width: 760px) {
-      .NotMobile {
-        display:none!important;
-      }
-    }
-
-  
 
   & .Menu ul {
       display:flex;
       list-style:none;
       flex-wrap:wrap;
-      margin: 5px 40px 0 0;
+      margin: 5px 20px 0 20px;
       
   }
   & .Menu li {
@@ -53,12 +46,35 @@ export const Header = styled.header`
         font-size: 1em;
         font-weight:400;
         display:flex;
-      }
+        &:hover {
+          color: ${colors.secundary};
+        }
+
+    }
 
     .Menu a svg {
       float: right;
        margin: 3px 0 0 6px;
     }
+
+
+  @media (max-width: 760px) {
+      .NotMobile {
+        display:none!important;
+      }
+      h1 {
+      font-size:1em;
+      }
+
+      .Menu ul {
+        margin: 0;
+      }
+
+      .Menu a {
+        font-size:1em;
+      }
+  }
+
 
 `;
 
