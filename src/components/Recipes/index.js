@@ -11,7 +11,7 @@ const RecipesList = () => {
                     <li>
                         
                         <Link to="/">
-                            <img src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                            <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
                         </Link>
                         
                         </li>

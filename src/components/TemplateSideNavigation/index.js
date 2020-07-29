@@ -13,7 +13,7 @@ export const TemplateSideNavigation = () => {
                             <Link to="/"> Inicio </Link>
                         </li>
                         <li>
-                            <Link to="/"> Dica da Jana </Link>
+                            <Link to="/tips"> Dica da Jana </Link>
                         </li>
                         <li>
                             <Link to="/"> Usuários </Link>

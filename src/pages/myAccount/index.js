@@ -1,10 +1,11 @@
 import React from 'react'
+import Card from '../../components/ui/Card'
 
 const MyAccount = () => {
     return (
-        <div>
-            Minha Conta
-        </div>
+        <Card>
+            <h2>Minha Conta</h2>
+        </Card>
     )
 }
 
