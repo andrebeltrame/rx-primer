@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Header } from './style';
 import { SignOutIcon, ThreeBarsIcon, PlusCircleIcon } from '@primer/octicons-react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/Buttons';
 
+
+
 function TemplateHeader() {
+
     return (
         <>
             <Header>
@@ -30,6 +33,11 @@ function TemplateHeader() {
                         <Button className="MobileNav"><ThreeBarsIcon size={25} /></Button>
                     </nav>
                </div>
+
+                <div className="MenuMobile NotMobile">
+                   Menu
+               </div>
+
             </Header>
         </>
     )
