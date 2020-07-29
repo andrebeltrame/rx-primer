@@ -23,6 +23,13 @@ export const Header = styled.header`
     display:flex
   }
 
+    @media (max-width: 760px) {
+      .Menu {
+        display:none;
+      }
+    }
+
+
   & .Menu ul {
       display:flex;
       list-style:none;

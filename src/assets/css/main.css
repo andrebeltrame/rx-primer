@@ -29,6 +29,14 @@ ol {
 }
 
 
+
+h2 {
+    font-weight: 600;
+    color:  #ED003A;
+    text-transform: uppercase;
+    padding: 0 0 20px 0;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -39,19 +47,20 @@ ol {
 .inner-container {
     background: #fff;
     display: flex;
-    padding: 20px;
+    flex: 1;
+    padding: 0px;
     flex-direction: column;
 }
 
 aside {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+   
 }
 
 .inner {
     flex: 1;
+    width: 100%;
     margin: 20px 0 0 0px;
+    padding-top: 40px;
     align-self:start;
     display: flex;
     flex-wrap: wrap;
@@ -87,14 +96,31 @@ aside {
     background:  #f19633;
 }
 
+.widget {
+    
+}
+
+.widget::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.no-border {
+    border-bottom: none!important;
+}
+
 @media (min-width: 860px) {
     .inner {
         flex: 1 1 690px;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 0px;
+        border-left: 1px solid #e2dfdf;
+        min-height: 600px;
     }
     .inner-container {
             flex: 1 1 690px;
             flex-direction: row;
+           
     }
 
     .container {

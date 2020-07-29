@@ -4,7 +4,8 @@ const colors = {
     secundary: '#ED003A',
     main: '#222B4E',
     white: '#fff',
-    muted: '#a7a3a3'
+    muted: '#a7a3a3',
+    light: '#e2dfdf'
 }
 
 export default colors;

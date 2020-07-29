@@ -7,6 +7,3 @@ export const ButtonItem = styled.button`
 
 export default ButtonItem;
 
-
-
-

@@ -15,9 +15,7 @@ function TemplateHeader() {
                     <nav className="Menu">
                         <ul>
                             <li>
-                                <Link to="/">
-                                    Minha Conta
-                                </Link>
+                                <Link to="/account"> Minha Conta </Link>
                             </li>
                             <li>
                                 <Button className="ButtonMd ColorPrimary">Sair</Button>
