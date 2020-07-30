@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Header } from './style';
 import { SignOutIcon, ThreeBarsIcon, PlusCircleIcon } from '@primer/octicons-react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/Buttons';
+import SiteMenus from '../TemplateSideNavigation/Menus';
 
 
 
 function TemplateHeader() {
+
+    const [activeMenu, setActiveMenu] = React.useState(false);
+
+    function showMenu() {
+        setActiveMenu(!activeMenu);
+    }
 
     return (
         <>
@@ -30,12 +37,15 @@ function TemplateHeader() {
                             </li>
                         </ul>
             
-                        <Button className="MobileNav"><ThreeBarsIcon size={25} /></Button>
+                        <Button onClick={showMenu} className="MobileNav"><ThreeBarsIcon size={25} /></Button>
                     </nav>
                </div>
 
-                <div className="MenuMobile NotMobile">
-                   Menu
+                <div className={`MobileMenu ${activeMenu ? "active" : ""}`}>
+                    <div className="LeftMenu">
+                        <SiteMenus/>
+                    </div>
+                    <div onClick={showMenu}  className="menuOpacity"></div>
                </div>
 
             </Header>

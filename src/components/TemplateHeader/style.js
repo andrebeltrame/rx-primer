@@ -75,7 +75,63 @@ export const Header = styled.header`
       }
   }
 
+  .MobileMenu {
+   position:relative;
+   z-index: 999;
+  }
 
+  .LeftMenu {
+    visibility:hidden;
+    position: fixed;
+    left:-100%;
+    background-color: ${colors.main};
+    width:350px;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.29);
+    height: 100vh;
+    top: 0;
+    transition: all .3s ease-in;
+    z-index:90;
+   
+  }
+
+  .MobileMenu.active .LeftMenu {
+    visibility:visible;
+    left: 0;
+  }
+
+   .LeftMenu ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 30px 0 0 0;
+      
+   }
+   .LeftMenu li {
+     flex: 1;
+     padding: 10px 35px;
+     & a {
+        color: ${colors.white};
+        display:block;
+        &:hover {
+          color: ${colors.primary}
+        }
+     }
+   }
+
+   .MobileMenu.active {
+     & .menuOpacity {
+       position: fixed;
+       width:100vw;
+       height: 100vh;
+       background-color:#0000008a;
+       z-index:-1;
+       top: 0;
+       left: 0;
+       transition: all .3s ease-in;
+     }
+   }
+  
 `;
 
 export default Header;

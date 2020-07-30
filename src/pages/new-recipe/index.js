@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ImageUploader from "react-images-upload";
 import Card from '../../components/ui/Card';
+import Input from "../../components/ui/Input";
 
  const PageNewRecipe  = props => {
 
@@ -14,6 +15,7 @@ import Card from '../../components/ui/Card';
         <div>
             <Card>
                 <h2>Nova Receita</h2>
+                <Input label="Nome da Receita" type="text" required/>
 
                 <ImageUploader
                     {...props}
