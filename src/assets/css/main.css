@@ -12,6 +12,9 @@ body {
     box-sizing: border-box;
 }
 
+
+
+
 a {
     text-decoration: none;
 }
@@ -28,7 +31,72 @@ ol {
     --color-default: #222B4E;
 }
 
+/* CSS Reset */
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Box Sizing Border Box */
+
+html {
+	box-sizing: border-box;
+}
+
+/* Clearfixes */
+
+.clearfix:before, .clearfix:after,
+.section:before, .section:after,
+\.row:before, .row:after,
+.column:before, .column:after, 
+.navbar:before, .navbar:after {
+  content: " "; display: table;
+}
+
+.clearfix:after,
+.section:after, 
+.container:after,
+.row:after,
+.column:after,
+.navbar:after {
+  clear: both;
+}
+
+.img {
+
+}
+
+/* *****************
+  CSS Grid
+******************** */
+
+.col {
+ 
+}
+
+.row .col:first-child {
+ padding-right: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  .col {
+    float: left;
+  }
+  .col-2 {
+    width: 16.66666667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33333333%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  
+}
 
 h2 {
     font-weight: 600;

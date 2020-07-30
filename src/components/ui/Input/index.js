@@ -1,11 +1,14 @@
 import React from 'react'
+import FormField from './style'
 
 const Input = ({ label, id, type, ...props }) => {
     return (
-        <>
-            <label htmlFor={id}>{label}</label>
-            <input id={id} placeholder={label} type={type} {...props}/>
-        </>
+        <FormField>
+            <div className="formField">
+                <label htmlFor={id}>{label}</label>
+                <input id={id} placeholder={label} type={type} {...props}/>
+            </div>
+        </FormField>
     )
 }
 

@@ -5,7 +5,9 @@ const colors = {
     main: '#222B4E',
     white: '#fff',
     muted: '#a7a3a3',
-    light: '#e2dfdf'
+    light: '#e2dfdf',
+    faded: '#E5E9F9',
+    gray: '#a2a2a2'
 }
 
 export default colors;

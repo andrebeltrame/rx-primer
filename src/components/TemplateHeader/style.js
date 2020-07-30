@@ -15,16 +15,18 @@ export const Header = styled.header`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+
 
   }
 
   & .Logo {
-    display:flex
+    display:flex;
+    flex:1 1 200;
   }
 
   .Menu {
     display:flex;
+     flex:1 1 200;
   }
 
 
