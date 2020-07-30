@@ -12,9 +12,6 @@ body {
     box-sizing: border-box;
 }
 
-
-
-
 a {
     text-decoration: none;
 }
@@ -37,6 +34,10 @@ ol {
   box-sizing: inherit;
 }
 
+.mb-2 {
+    margin-bottom: 20px;
+}
+
 
 /* Box Sizing Border Box */
 
@@ -48,7 +49,7 @@ html {
 
 .clearfix:before, .clearfix:after,
 .section:before, .section:after,
-\.row:before, .row:after,
+.row:before, .row:after,
 .column:before, .column:after, 
 .navbar:before, .navbar:after {
   content: " "; display: table;
@@ -95,6 +96,14 @@ html {
   .col-6 {
     width: 50%;
   }
+
+    .col-8 { 
+     width: 66%;
+    }
+
+  .col-12 {
+      width: 100%;
+  }
   
 }
 
@@ -103,6 +112,12 @@ h2 {
     color:  #ED003A;
     text-transform: uppercase;
     padding: 0 0 20px 0;
+}
+
+h3 {
+ color: #222B4E; 
+ font-size: 1.4em;
+ font-weight: 800;
 }
 
 .container {
@@ -148,6 +163,12 @@ aside {
 .ButtonMd{
      padding:10px 30px;
      font-size: .8em;
+}
+
+
+.ButtonSm {
+     padding:6px 20px;
+     font-size: .6em;
 }
 
 .btn {
@@ -222,4 +243,29 @@ aside {
         flex-direction: row;
     }
     
+}
+
+.react-tabs {
+    margin: 0 0 40px 0;
+}
+
+.react-tabs__tab {
+    color: #393737;
+}
+
+.react-tabs__tab-panel {
+    border: 1px solid #d8d7d7;
+    border-top: none;
+    padding: 20px 10px;
+}
+
+.react-tabs__tab-list {
+    margin: 0;
+  
+}
+
+.react-tabs__tab--selected,
+.react-tabs__tab-list {
+    border-color:#d8d7d7;
+    font-weight: 500;
 }
