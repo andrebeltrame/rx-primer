@@ -8,11 +8,12 @@ import 'react-tabs/style/react-tabs.css';
 import Textarea from "../../components/ui/Textarea";
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import SingleUpload from "../../components/ui/SingleUpload";
 
- const PageNewRecipe  = props => {
+const PageNewRecipe = props => {
 
 
-    
+
     const [pictures, setPictures] = useState([]);
 
     const onDrop = picture => {
@@ -25,10 +26,11 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
                 <h2>Nova Receita</h2>
 
                 <div className="row">
-                        <div className="col col-4">
-                        Imagem
-                            <Button className="ButtonSm ColorPrimary">Enviar Foto</Button>
-                        </div>
+                    <div className="col col-4">
+                    
+                            <SingleUpload/>
+
+                    </div>
 
                     <div className="col col-8">
                         <div className="col-12">
@@ -65,9 +67,9 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
                     </Tabs>
                 </div>
 
-              
 
-                
+
+
                 <h3>Galeria de Imagens</h3>
                 <ImageUploader
                     {...props}
@@ -83,8 +85,8 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
             </Card>
 
 
-          
-            
+
+
         </div>
     )
 }

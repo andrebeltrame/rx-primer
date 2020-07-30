@@ -39,6 +39,10 @@ ol {
 }
 
 
+img {
+    max-width: 100%;
+}
+
 /* Box Sizing Border Box */
 
 html {
