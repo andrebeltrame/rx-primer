@@ -7,11 +7,13 @@ import 'react-tabs/style/react-tabs.css';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ImagesUploader  from '../../components/ui/ImageUploader'
-import TagAutoComplete from "../../components/ui/TagAutoComplete";
+import TagsInput from "../../components/ui/TagsInput";
 
 const PageNewRecipe = props => {
 
-
+    const selectedTags = tags => {
+        console.log(tags);
+    };
 
     return (
         <div>
@@ -41,7 +43,7 @@ const PageNewRecipe = props => {
                 </div>
                 <div className="row mb-2">
                     <h3>Keywords</h3>
-                    <TagAutoComplete/>
+                    <TagsInput selectedTags={selectedTags} tags={['Arroz', 'Feijão']} />
                 </div>
 
                 <div className="row">

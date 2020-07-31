@@ -1,24 +1,14 @@
 {
-  "name": "rx-primer",
+  "name": "tags-input",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@primer/octicons-react": "^10.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "babel-polyfill": "^6.26.0",
-    "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-draft-wysiwyg": "^1.14.5",
-    "react-images-uploading": "^2.2.2",
-    "react-router-dom": "^6.0.0-beta.0",
-    "react-rte": "^0.16.1",
-    "react-scripts": "3.4.1",
-    "react-tabs": "^3.1.1",
-    "styled-components": "^5.1.1"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
