@@ -4,6 +4,9 @@ import colors from '../../assets/css/colors';
 export const Header = styled.header`
   background: ${colors.main};
   padding:20px;
+  position: -webkit-sticky;
+  position: sticky;
+   top: 0px;
 
   & h1 {
     color: ${colors.white};
