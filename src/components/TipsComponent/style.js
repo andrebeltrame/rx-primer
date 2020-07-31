@@ -3,7 +3,9 @@ import colors from '../../assets/css/colors';
 
 export const TipsMainList = styled.ul`
   list-style:none;
-  & ::last-child {
+  margin: 0 0 30px 0;
+  
+  & li:last-child {
           border: none;
       }
   li {

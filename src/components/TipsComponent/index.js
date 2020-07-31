@@ -6,8 +6,9 @@ import { Button } from '../ui/Buttons';
 const TipsAPI = 'https://raw.githubusercontent.com/andrebeltrame/recipe-json/master/dicas.json';
 
 
-
 class TipsList extends Component {
+
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -55,19 +56,16 @@ class TipsList extends Component {
         console.log(dicas);
 
         return (
+            
             <>
                 <TipsMainList>
-                    {dicas.map((dica, index) =>
+                    {dicas.slice( 0, + this.props.limit ).map((dica, index) =>
                         <li key={index}>
                             <p>{dica.dica}</p>
-
-                            <Button className="btn iconOnly">
-                                <TrashIcon size={15} />
-                            </Button>
+                            {this.props.delete ? <Button className="btn iconOnly"><TrashIcon size={15} /></Button> : null}
                         </li>
                     )}
                 </TipsMainList>
-
             </>)
     }
 

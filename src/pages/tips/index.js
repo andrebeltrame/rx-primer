@@ -10,8 +10,7 @@ export const PageTips = (props) => {
         <>
             <Cards>
                 <h2>Dicas da Jhana</h2>
-                <TipsList />
-
+                <TipsList limit="3" delete="true" />
                 <h3 className="mt-2 mb-2">Cadastrar nova dica</h3>
                 <Editor />
                 <Button className="btn ButtonMd ColorSecundary">Salvar dica</Button>

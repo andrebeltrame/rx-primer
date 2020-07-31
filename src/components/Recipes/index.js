@@ -61,9 +61,13 @@ class RecipesList extends Component {
         if (isLoading) {
             return <p>Loading ...</p>;
         } 
+
+     
       
         return (
+
             <ListRecipies>
+                
                <ul>
                     {receitas.slice(0,6).map((receita, index) => 
                         <li key={index}>
@@ -71,6 +75,7 @@ class RecipesList extends Component {
                             <span style={{backgroundImage: "url(" + receita.link_imagem + ")"  }} className="thumbnail"></span>
                             {receita.receita}
                         </Link>
+                        {this.props.edit ? <button type="submit" className="btn ButtonSm ColorPrimary"><Link to="/">Editar receita</Link></button> : null }
                     </li>
                     )}
                </ul>
