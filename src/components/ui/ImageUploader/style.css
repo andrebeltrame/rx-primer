@@ -1,0 +1,23 @@
+.imageUploderComponent {
+    margin: 20px 0;
+}
+.imageUploderComponent .btn {
+    margin: 0 10px 0 0;
+}
+
+.imageUploderComponent .listThumbnails {
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  
+}
+
+.imageUploderComponent .thumbnail {
+    width: 170px;
+    margin: 0 15px 0 0;
+}
+
+.imageUploderComponent .thumbnail .btn {
+    padding: 6px 8px;
+}

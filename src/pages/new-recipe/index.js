@@ -1,24 +1,17 @@
-import React, { useState } from "react";
-import ImageUploader from "react-images-upload";
+import React from "react";
 import Card from '../../components/ui/Card';
 import Input from "../../components/ui/Input";
 import { Button } from "../../components/ui/Buttons";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import Textarea from "../../components/ui/Textarea";
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import SingleUpload from "../../components/ui/SingleUpload";
+import ImagesUploader  from '../../components/ui/ImageUploader'
+import TagAutoComplete from "../../components/ui/TagAutoComplete";
 
 const PageNewRecipe = props => {
 
 
-
-    const [pictures, setPictures] = useState([]);
-
-    const onDrop = picture => {
-        setPictures([...pictures, picture]);
-    };
 
     return (
         <div>
@@ -27,9 +20,8 @@ const PageNewRecipe = props => {
 
                 <div className="row">
                     <div className="col col-4">
-                    
-                            <SingleUpload/>
-
+                        
+                            <Button className="ButtonSm ColorPrimary">Enviar Foto</Button>
                     </div>
 
                     <div className="col col-8">
@@ -49,6 +41,7 @@ const PageNewRecipe = props => {
                 </div>
                 <div className="row mb-2">
                     <h3>Keywords</h3>
+                    <TagAutoComplete/>
                 </div>
 
                 <div className="row">
@@ -71,13 +64,9 @@ const PageNewRecipe = props => {
 
 
                 <h3>Galeria de Imagens</h3>
-                <ImageUploader
-                    {...props}
-                    withIcon={true}
-                    onChange={onDrop}
-                    imgExtension={[".jpg", ".gif", ".png", ".gif"]}
-                    maxFileSize={5242880}
-                />
+       
+
+                <ImagesUploader/>
 
 
                 <Button className="ButtonMd ColorSecundary">Salvar Receita</Button>

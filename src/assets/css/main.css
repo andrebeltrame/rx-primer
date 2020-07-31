@@ -203,6 +203,15 @@ aside {
     background: #f33464;;
 }   
 
+.ColorGray {
+    background: #a09e9c;
+    color: #fff;
+}
+
+.ColorGray:hover {
+    background: #b8b6b5;
+}
+
 .widget {
     
 }
