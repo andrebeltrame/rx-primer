@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import ListRecipies from './style';
 import { Link } from 'react-router-dom'
-const API = './receitas';
+const API = 'https://gist.githubusercontent.com/lucasheriques/ed2214dba65b8903a5b62566f4439005/raw/3464c288baf4195075ee6061d14d11be205965ca/receitas.json';
 
 
 class RecipesList extends Component {
@@ -16,13 +16,18 @@ class RecipesList extends Component {
     }
 
     async componentDidMount() {
-        this.setState({ isLoading: true });
+        this.state = {
+            receitas: [],
+            isLoading: false,
+            error: null,
+        };
 
         try {
             const result = await axios.get(API);
 
             this.setState({
-                hits: result.data.receitas,
+                
+                receitas: result.data.receitas,
                 isLoading: false
             });
         } catch (error) {
@@ -44,15 +49,15 @@ class RecipesList extends Component {
         if (isLoading) {
             return <p>Loading ...</p>;
         } 
-        console.log(receitas);
-        
+      
+      
         return (
             <ListRecipies>
                <ul>
-                    {receitas.map(receita =>
-                        <li key={receita.objectID}>
+                    {receitas.slice(0,6).map(receita => 
+                        <li key={receita.receita}>
                             <Link to="/">
-                            <img alt="Nome" src="https://image.freepik.com/free-photo/delicious-beef-burgers-wooden-board_23-2148290634.jpg" />
+                                <img alt={receita.receita} src={receita.link_imagem} />
                                 {receita.receita}
                         </Link>
                     </li>
