@@ -2,17 +2,29 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import ListRecipies from './style';
 import { Link } from 'react-router-dom'
-const API = 'https://gist.githubusercontent.com/lucasheriques/ed2214dba65b8903a5b62566f4439005/raw/3464c288baf4195075ee6061d14d11be205965ca/receitas.json';
+const API = 'https://raw.githubusercontent.com/andrebeltrame/recipe-json/master/receitas.json';
 
 
 class RecipesList extends Component {
+
+
+    
     constructor(props) {
         super(props);
+      
+
         this.state = {
             receitas: [],
             isLoading: false,
             error: null,
         };
+
+        const originalProps = this.props;
+        try {
+            this.props = props;
+        } finally {
+            this.props = originalProps;
+        }
     }
 
     async componentDidMount() {
@@ -50,15 +62,14 @@ class RecipesList extends Component {
             return <p>Loading ...</p>;
         } 
       
-      
         return (
             <ListRecipies>
                <ul>
-                    {receitas.slice(0,6).map(receita => 
-                        <li key={receita.receita}>
-                            <Link to="/">
-                                <img alt={receita.receita} src={receita.link_imagem} />
-                                {receita.receita}
+                    {receitas.slice(0,6).map((receita, index) => 
+                        <li key={index}>
+                        <Link to="/">
+                            <span style={{backgroundImage: "url(" + receita.link_imagem + ")"  }} className="thumbnail"></span>
+                            {receita.receita}
                         </Link>
                     </li>
                     )}

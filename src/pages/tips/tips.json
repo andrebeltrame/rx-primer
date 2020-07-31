@@ -1,0 +1,28 @@
+{
+    "dicas": [
+        {
+            "id": "1",
+            "dica": "Procure manter a dieta de segunda à sexta-feira, mas cuidado com os excessos de final de semana. Comer de “tudo”, mas cuidar com as quantidades."
+        },
+        {
+            "id": "2",
+            "dica": "Quando tiver vontade de beliscar: Primeiro beba 1 copo de água, depois escolha: Gelatina diet/light ou capuccino diet ou chá ou frutas secas, água de coco ou refrigerante diet/light ou refresco diet/light."
+        },
+        {
+            "id": "3",
+            "dica": "Alimentos que podem apresentar consumo livre: Chá ou café (com adoçante), água de coco, refrigerante diet/light, limonada (com adoçante), gelatina diet/light, suco de melão ou melancia (sem açúcar) e hortaliças." 
+        },
+        {
+            "id": "4",
+            "dica": "No dia a dia, procure locais que servem refeições feitas na hora e a preço justo. Restaurantes de comida a quilo podem ser boas opções, assim como refeitórios que servem comida caseira em escolas ou no local de trabalho. Evite redes de fast-food."
+        },
+        {
+            "id": "5",
+            "dica": "Se você tem habilidades culinárias, procure desenvolvê-las e partilhá-las, principalmente com crianças e jovens, sem distinção de gênero. Se você não tem habilidades culinárias, procure adquiri-las. Para isso, converse com as pessoas que sabem cozinhar, peça receitas a familiares, amigos e colegas, leia livros, consulte a internet, eventualmente faça cursos e comece a cozinhar."
+        },
+        {
+            "id": "6",
+            "dica": "Utilizados com moderação ao temperar e cozinhar alimentos in natura ou minimamente processados, esses ingredientes contribuem para tornar a alimentação mais saborosa sem torná-la nutricionalmente desbalanceada."
+        }
+    ]
+}

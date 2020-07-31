@@ -4,6 +4,7 @@ import RecipesList from '../../components/Recipes'
 import { Button } from '../../components/ui/Buttons';
 import { Link } from 'react-router-dom';
 import './style.css';
+
 const Dashboard = () => {
     return (
         <>

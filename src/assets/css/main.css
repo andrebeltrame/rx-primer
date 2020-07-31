@@ -37,6 +37,9 @@ ol {
 .mb-2 {
     margin-bottom: 20px;
 }
+.mt-2 {
+    margin-top: 20px;
+}
 
 
 img {
@@ -212,6 +215,13 @@ aside {
     background: #b8b6b5;
 }
 
+.iconOnly {
+    background: transparent;
+}
+.iconOnly:hover {
+    opacity: .7;
+}
+
 .widget {
     
 }
@@ -281,4 +291,10 @@ aside {
 .react-tabs__tab-list {
     border-color:#d8d7d7;
     font-weight: 500;
+}
+
+.public-DraftEditor-content {
+    min-height: 200px;
+    border: 1px solid rgb(243, 240, 240);
+    margin-bottom: 30px;
 }
