@@ -8,6 +8,7 @@ import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ImagesUploader  from '../../components/ui/ImageUploader'
 import TagsInput from "../../components/ui/TagsInput";
+import './style.css';
 
 const PageNewRecipe = props => {
 
@@ -17,7 +18,7 @@ const PageNewRecipe = props => {
 
     return (
         <div>
-            <Card>
+            <Card className="no-border">
                 <h2>Nova Receita</h2>
 
                 <div className="row">
@@ -38,6 +39,13 @@ const PageNewRecipe = props => {
                             <div className="col col-6">
                                 <Input label="Rendimento" type="text" required />
                             </div>
+
+                            <div className="col-12">
+                                <input type="radio" id="keep-home" name="home" value="home" />
+                                <label for="keep-home">Manter esta receita na home</label>
+                                
+                            </div>
+
                         </div>
                     </div>
                 </div>

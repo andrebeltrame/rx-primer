@@ -5,7 +5,7 @@ import { Button } from '../../components/ui/Buttons'
 
 const MyAccount = () => {
     return (
-        <Card>
+        <Card className="no-border">
             <h2>Minha Conta</h2>
             <div className="row">
                 <div className="col col-6">

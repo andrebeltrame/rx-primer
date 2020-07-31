@@ -8,7 +8,7 @@ import { Button } from '../../components/ui/Buttons';
 export const PageTips = (props) => {
     return (
         <>
-            <Cards>
+            <Cards className="no-border">
                 <h2>Dicas da Jhana</h2>
                 <TipsList limit="3" delete="true" />
                 <h3 className="mt-2 mb-2">Cadastrar nova dica</h3>

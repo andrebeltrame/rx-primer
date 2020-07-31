@@ -4,7 +4,7 @@ import RecipesList from '../../components/Recipes'
 
 const PageRecipes = () => {
     return (
-        <Card>
+        <Card className="no-border">
             <h2>Receitas</h2>
             <RecipesList edit="true" show="200" />
         </Card>

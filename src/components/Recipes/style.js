@@ -37,6 +37,11 @@ export const ListRecipies = styled.div`
     display: block;
     margin: 0 0 15px 0;
   }
+  .btn {
+    display:block;
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+  }
   
 `;
 

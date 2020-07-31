@@ -182,6 +182,7 @@ aside {
     cursor: pointer;
     color: #393737;
     outline: none;
+    border-radius: 60px;
 }
 
 .btn:active {
@@ -191,6 +192,9 @@ aside {
 .ColorPrimary {
     background:  #FD9629;
     color: #fff;
+}
+.ColorPrimary a {
+    color: #fff!important;
 }
 
 .ColorPrimary:hover  {
