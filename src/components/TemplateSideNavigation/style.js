@@ -20,7 +20,7 @@ export const Aside = styled.aside`
     display: flex;
     color: ${colors.base};
     font-size:.9rem;
-    line-height:1em;
+    line-height:1.4em;
         align-items: flex-start;
     &:hover {
          color: ${colors.secundary};

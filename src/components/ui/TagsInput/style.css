@@ -66,8 +66,10 @@ input[type=text] {
         margin: 0 0 0 15px;
 	}
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 800px) {
 	.tags-input {
-		width: calc(100vw - 32px);
+        width: calc(80vw - 32px);
+        flex-direction: column;
+        margin-bottom: 40px;
 	}
 }

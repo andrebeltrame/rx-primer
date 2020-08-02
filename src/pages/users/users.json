@@ -1,0 +1,28 @@
+{
+    "usuarios": [
+        {
+            "id": "1",
+            "usuario": "Vanessa Renata"
+        },
+        {
+            "id": "2",
+            "usuario": "Bianca Deacruz"
+        },
+        {
+            "id": "3",
+            "usuario": "Fernanda Rios"
+        },
+        {
+            "id": "4",
+            "usuario": "Maria Cristina"
+        },
+        {
+            "id": "5",
+            "usuario": "Carmem Lucia"
+        },
+        {
+            "id": "6",
+            "usuario": "Francisca Del Nicole "
+        }
+    ]
+}

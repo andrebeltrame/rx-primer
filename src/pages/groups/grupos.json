@@ -1,0 +1,28 @@
+{
+    "grupos": [
+        {
+            "id": "1",
+            "grupo": "Dieta 1"
+        },
+        {
+            "id": "2",
+            "grupo": "Dieta 2"
+        },
+        {
+            "id": "3",
+            "grupo": "Dieta 3"
+        },
+        {
+            "id": "4",
+            "grupo": "Dieta 4"
+        },
+        {
+            "id": "5",
+            "grupo": "Dieta 5"
+        },
+        {
+            "id": "6",
+            "grupo": "Dieta 6"
+        }
+    ]
+}
