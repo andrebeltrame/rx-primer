@@ -1,3 +1,31 @@
 input[type=radio] {
     margin: 0 10px 0 0;
 }
+
+.StepsEditor {
+    position: relative;
+    margin: 20px 0 20px 0;
+    max-width: 90%;
+}
+.StepsEditor h5 {
+    color: #fff;
+    background: #222B4E;
+    padding: 15px;
+}
+.buttonPlusEditor {
+    background: #222B4E;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    flex: 1;
+    position: absolute;
+    top: 50%;
+    right:-70px;
+    cursor: pointer;
+    outline: none;
+}
+.buttonPlusEditor:hover {
+    background: #ED003A;
+}

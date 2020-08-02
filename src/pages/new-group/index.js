@@ -2,7 +2,8 @@ import React from 'react'
 import Input from '../../components/ui/Input'
 import Card from '../../components/ui/Card'
 import { Button } from '../../components/ui/Buttons';
-import { GroupUsers } from './style';
+import { GroupUsers } from "./style";
+import ListUsers from '../../components/Users';
 
 const PageNewGroup = () => {
     return (
@@ -39,6 +40,7 @@ const PageNewGroup = () => {
             </h4>
             <Button className="btn ButtonMd ColorPrimary">Adicionar usuário</Button>
           </div>
+          <ListUsers/> 
         </GroupUsers>
       </Card>
     );

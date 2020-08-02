@@ -8,6 +8,8 @@ import { Editor} from "react-draft-wysiwyg";
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ImagesUploader  from '../../components/ui/ImageUploader'
 import TagsInput from "../../components/ui/TagsInput";
+import { PlusCircleIcon } from "@primer/octicons-react";
+
 import './style.css';
 
 const PageNewRecipe = props => {
@@ -118,6 +120,19 @@ const PageNewRecipe = props => {
 
           <ImagesUploader />
 
+          <h3>Instruções da Receita</h3>
+          <p>
+            Adicione imagens e vídeos na sequência da sua receita, clique em{" "}
+            <PlusCircleIcon size={15} /> para novos passos.
+          </p>
+
+          <div className="StepsEditor">
+            <h5 className="mb-5">Passo 1</h5>
+            <Editor />
+            <button alt="Adicionar novo Passo" className="buttonPlusEditor">
+              <PlusCircleIcon size={30} />
+            </button>
+          </div>
           <Button className="ButtonMd ColorSecundary">Salvar Receita</Button>
         </Card>
       </div>

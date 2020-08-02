@@ -7,9 +7,10 @@ margin: 40px 0;
     justify-content: space-between;
     align-items: center;
     flex-wrap:nowrap;
+    margin: 0 0 20px 0;
     h4 {
         font-weight:100;
-        font-size:1em;
+        font-size:1.2em;
         & strong {
             font-weight:800;
         }

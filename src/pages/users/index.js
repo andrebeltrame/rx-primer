@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from '../../components/ui/Card'
+import ListUsers from '../../components/Users'
 
 export const PageUsers = () => {
     return (
-        <Card>
+        <Card className="no-border">
             <h2>Usuários</h2>
+            <ListUsers/>
         </Card>
     )
 }

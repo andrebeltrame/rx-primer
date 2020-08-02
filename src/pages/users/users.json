@@ -2,27 +2,33 @@
     "usuarios": [
         {
             "id": "1",
-            "usuario": "Vanessa Renata"
+            "usuario": "Vanessa Renata",
+            "thumbnail" : "https://image.freepik.com/free-photo/beautiful-girl-blows-kiss-front_85574-10850.jpg"
         },
         {
             "id": "2",
-            "usuario": "Bianca Deacruz"
+            "usuario": "Bianca Deacruz",
+            "thumbnail" : "https://image.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg"
         },
         {
             "id": "3",
-            "usuario": "Fernanda Rios"
+            "usuario": "Fernanda Rios",
+            "thumbnail" : "https://image.freepik.com/free-photo/portrait-pretty-young-woman-modern-apartment-morning_155003-11818.jpg"
         },
         {
             "id": "4",
-            "usuario": "Maria Cristina"
+            "usuario": "Maria Cristina",
+            "thumbnail" : "https://image.freepik.com/free-photo/cheerful-middle-aged-woman-with-curly-hair_1262-20859.jpg"
         },
         {
             "id": "5",
-            "usuario": "Carmem Lucia"
+            "usuario": "Carmem Lucia",
+            "thumbnail" : "https://image.freepik.com/free-photo/beautiful-redhead-girl-with-freckles-smiling_176420-11278.jpg"
         },
         {
             "id": "6",
-            "usuario": "Francisca Del Nicole "
+            "usuario": "Francisca Del Nicole",
+            "thumbnail" : "https://image.freepik.com/free-photo/excited-happy-young-pretty-woman_171337-2006.jpg"
         }
     ]
 }

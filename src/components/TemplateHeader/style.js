@@ -20,7 +20,6 @@ export const Header = styled.header`
   flex-wrap: wrap;
   justify-content: space-between;
 
-
   }
 
   & .Logo {
