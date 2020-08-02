@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import ListUser  from "./style";
+import { Overlay } from "react-portal-overlay";
 
 const API =
   "https://raw.githubusercontent.com/andrebeltrame/recipe-json/master/usuarios.json";
@@ -14,7 +15,10 @@ class ListUsers extends Component {
       usuarios: [],
       isLoading: false,
       error: null,
+      open: false,
+      setOpen: false
     };
+
 
     const originalProps = this.props;
     try {
@@ -22,6 +26,7 @@ class ListUsers extends Component {
     } finally {
       this.props = originalProps;
     }
+   
   }
 
   async componentDidMount() {
@@ -47,7 +52,10 @@ class ListUsers extends Component {
   }
 
   render() {
+    
     const { usuarios, isLoading, error } = this.state;
+   // const { open, setOpen } = this.state;
+    
 
     if (error) {
       return <p>{error.message}</p>;
@@ -58,30 +66,39 @@ class ListUsers extends Component {
     }
 
     return (
-      <ListUser>
-        {isLoading && usuarios && <p>Carregando...</p>}
+      <>
+        <ListUser>
+          {isLoading && usuarios && <p>Carregando...</p>}
 
-        <ul>
-          {usuarios.map((usuario, index) => (
-            <li key={index}>
-              <Link to="/">
-                <span
-                  style={{
-                    backgroundImage: "url(" + usuario.thumbnail + ")",
-                  }}
-                  className="thumbnail"
-                ></span>
-                {usuario.usuario}
-              </Link>
-              {this.props.edit ? (
-                <button type="submit" className="btn ButtonSm ColorPrimary">
-                  <Link to="/">Editar usuário</Link>
-                </button>
-              ) : null}
-            </li>
-          ))}
-        </ul>
-      </ListUser>
+          <ul>
+            {usuarios.map((usuario, index) => (
+              <li key={index}>
+                <Link to="/">
+                  <span
+                    style={{
+                      backgroundImage: "url(" + usuario.thumbnail + ")",
+                    }}
+                    className="thumbnail"
+                  ></span>
+                  {usuario.usuario}
+                </Link>
+                {this.props.edit ? (
+                  <button
+                   // onClick={() => setIsOpen(true)}
+                    type="submit"
+                    className="btn ButtonSm ColorPrimary">
+                    Editar usuário
+                  </button>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </ListUser>
+{/*         
+        <Overlay open={open} onClose={() => setOpen(false)}>
+          <h1>My overlay</h1>
+        </Overlay> */}
+      </>
     );
   }
 }
