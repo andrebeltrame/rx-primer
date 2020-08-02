@@ -120,7 +120,7 @@ const PageNewRecipe = props => {
 
           <ImagesUploader />
 
-          <h3>Instruções da Receita</h3>
+          <h3>Instruções da receita</h3>
           <p>
             Adicione imagens e vídeos na sequência da sua receita, clique em{" "}
             <PlusCircleIcon size={15} /> para novos passos.

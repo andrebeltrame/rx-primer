@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const PageGroups = () => {
     return (
-      <Card clasName="no-border">
+      <Card className="no-border">
         <h2>Grupos</h2>
         <Link to="/new-group">
           <Button className=" btn ButtonMd ColorSecundary mb-2">

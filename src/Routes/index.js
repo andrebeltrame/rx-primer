@@ -8,6 +8,7 @@ import PageRecipes from '../pages/recipes';
 import PageGroups from '../pages/groups';
 import PageNewRecipe from '../pages/new-recipe';
 import PageNewGroup from "../pages/new-group";
+import PageCategory from "../pages/category";
 
 export default function MainRoutes() {
     return (
@@ -18,6 +19,7 @@ export default function MainRoutes() {
         <Route path="/users" element={<PageUsers />} />
         <Route path="/recipes" element={<PageRecipes />} />
         <Route path="/groups" element={<PageGroups />} />
+        <Route path="/category" element={<PageCategory />} />
         <Route path="/new-recipe" element={<PageNewRecipe />} />
         <Route path="/new-group" element={<PageNewGroup />} />
       </Routes>

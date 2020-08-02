@@ -305,10 +305,18 @@ aside {
     min-height: 200px;
     border: 1px solid rgb(243, 240, 240);
     margin-bottom: 30px;
+    padding: 10px;
 }
 
 textarea {
     padding: 9px 15px;
     background: #E5E9F9;
     width: 100%;
+}
+
+select {
+    border: 2px solid #ED003A;
+    border-radius: 30px;
+    color: #ED003A;
+    padding: 6px 15px;
 }
