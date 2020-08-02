@@ -2,27 +2,33 @@
     "grupos": [
         {
             "id": "1",
-            "grupo": "Dieta 1"
+            "grupo": "Dieta 1",
+            "thumbnail": "https://img.freepik.com/free-photo/pork-boat-noodles-classic-thai-food-popular-menus-ready-eat-soups-there-is-also-basil-bowl_1150-24194.jpg"
         },
         {
             "id": "2",
-            "grupo": "Dieta 2"
+            "grupo": "Dieta 2",
+            "thumbnail": "https://image.freepik.com/free-photo/pizza-placed-wooden-plate_1150-24398.jpg"
         },
         {
             "id": "3",
-            "grupo": "Dieta 3"
+            "grupo": "Dieta 3",
+            "thumbnail": "https://image.freepik.com/free-photo/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-red-onion-french-fries_2829-19530.jpg" 
         },
         {
             "id": "4",
-            "grupo": "Dieta 4"
+            "grupo": "Dieta 4",
+            "thumbnail": "https://image.freepik.com/free-photo/healthy-salad-bowl-with-chicken-breast_1339-68399.jpg"
         },
         {
             "id": "5",
-            "grupo": "Dieta 5"
+            "grupo": "Dieta 5",
+            "thumbnail": "https://image.freepik.com/free-photo/spicy-minced-meat-made-from-raw-meat_1150-24331.jpg"
         },
         {
             "id": "6",
-            "grupo": "Dieta 6"
+            "grupo": "Dieta 6",
+            "thumbnail": "https://image.freepik.com/free-photo/thai-papaya-salad-white-plate-banana-leaves-with-lime-tomatoes-eggplant-chili-garlic-peppers-salad-peanuts_1150-20731.jpg"
         }
     ]
 }

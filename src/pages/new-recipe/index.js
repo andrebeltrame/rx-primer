@@ -4,13 +4,14 @@ import Input from "../../components/ui/Input";
 import { Button } from "../../components/ui/Buttons";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { Editor } from 'react-draft-wysiwyg';
+import { Editor} from "react-draft-wysiwyg";
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ImagesUploader  from '../../components/ui/ImageUploader'
 import TagsInput from "../../components/ui/TagsInput";
 import './style.css';
 
 const PageNewRecipe = props => {
+
 
     //Thumbnail
     const [recipeName, setRecipeName] = React.useState('');
@@ -26,6 +27,7 @@ const PageNewRecipe = props => {
     const selectedTags = tags => {
         console.log(tags);
     };
+
 
     return (
       <div>
@@ -74,15 +76,17 @@ const PageNewRecipe = props => {
                 </div>
 
                 <div className="col-12">
-                  <input
-                    value={isHome}
-                    onChange={(event) => setIsHome(event.target.value)}
-                    setValue={isHome}
-                    type="radio"
-                    id="keep-home"
-                  />
-                  <label for="keep-home">Manter esta receita na home</label>
-                  {isHome}
+                  <label>
+                    <input
+                      value="keepHome"
+                      onChange={(event) => setIsHome(event.target.value)}
+                      setValue={isHome}
+                      checked={isHome === "keepHome"}
+                      type="radio"
+                      id="keep-home"
+                    />
+                    <label for="keep-home">Manter esta receita na home</label>
+                  </label>
                 </div>
               </div>
             </div>
@@ -100,8 +104,10 @@ const PageNewRecipe = props => {
               </TabList>
 
               <TabPanel>
-                <Editor/>
-               
+                <Editor
+                  wrapperClassName="demo-wrapper"
+                  editorClassName="demo-editor"
+                />
               </TabPanel>
               <TabPanel>
                 <Editor />

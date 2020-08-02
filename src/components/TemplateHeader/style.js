@@ -6,6 +6,7 @@ export const Header = styled.header`
   padding:20px;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 800;
    top: 0px;
 
   & h1 {

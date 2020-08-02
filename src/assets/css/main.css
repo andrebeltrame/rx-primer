@@ -41,6 +41,9 @@ ol {
     margin-top: 20px;
 }
 
+.mb-2 {
+    margin-bottom: 20px;
+}
 
 img {
     max-width: 100%;
@@ -302,4 +305,10 @@ aside {
     min-height: 200px;
     border: 1px solid rgb(243, 240, 240);
     margin-bottom: 30px;
+}
+
+textarea {
+    padding: 9px 15px;
+    background: #E5E9F9;
+    width: 100%;
 }
