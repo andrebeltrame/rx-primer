@@ -8,14 +8,18 @@ export const pageCategory = () => {
     return (
       <>
         <Card className="no-border">
-          <h2>Categorias</h2>
-          <FilterToolbar className="toolbarRecipes">
-            <Button
-              className="ButtonMd ColorSecundary"
-            >
-              Nova Categoria
+          <div className="grid-row">
+            <h2>Categorias</h2>
+            <FilterToolbar className="toolbarRecipes">
+              <Button
+                className="ButtonMd ColorSecundary"
+              >
+                Nova Categoria
             </Button>
-          </FilterToolbar>
+            </FilterToolbar>
+          </div>
+
+        
          
         </Card>
 
