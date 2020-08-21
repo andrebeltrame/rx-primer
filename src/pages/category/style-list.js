@@ -8,20 +8,20 @@ export const CategoriesList = styled.ul`
          /* flex: 1; */
 
          li {
-           padding: 10px 15px;
-           background-color: #f7f2eb;
+           padding: 20px 15px;
+           background-color: #f2f7f1;
            margin: 0 0 1px 0;
            width: 100%;
-         
+
            display: flex;
            flex-direction: row;
            align-content: justify-content;
-            align-items: center; 
+           align-items: center;
 
-            svg {
-                float:right;
-                display:block;
-            }
+           svg {
+             float: right;
+             display: block;
+           }
          }
        `;
 
