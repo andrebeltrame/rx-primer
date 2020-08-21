@@ -27,35 +27,34 @@ export default () => {
 
         <CategoriesList>
           <li>
+            <Button>
+              <XIcon size={16} />
+            </Button>
             <h4>Café da Manhã</h4>
+          </li>
+          <li>
             <Button>
               <XIcon size={16} />
             </Button>
-          </li>
-          <li>
             <h4>Almoço</h4>
+          </li>
+          <li>
             <Button>
               <XIcon size={16} />
             </Button>
-          </li>
-          <li>
             <h4>Jantar</h4>
+          </li>
+          <li>
             <Button>
               <XIcon size={16} />
             </Button>
-          </li>
-          <li>
             <h4>Café da tarde</h4>
-            <Button>
-              <XIcon size={16} />
-            </Button>
           </li>
           <li>
-            <h4>Outros</h4>
-
             <Button>
               <XIcon size={16} />
             </Button>
+            <h4>Outros</h4>
           </li>
         </CategoriesList>
       </Card>
