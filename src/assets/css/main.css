@@ -34,9 +34,14 @@ ul, ol {
     box-sizing: inherit;
 }
 
+.mb-1 {
+    margin-bottom: 10px;
+}
+
 .mb-2 {
     margin-bottom: 20px;
 }
+
 
 .mt-2 {
     margin-top: 20px;
@@ -305,4 +310,20 @@ select {
     flex-shrink: 1;
     justify-content: space-between;
     align-items: center;
+}
+
+.Overlay {
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentOverlay {
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 5px;
+    min-height: 300px;
 }
