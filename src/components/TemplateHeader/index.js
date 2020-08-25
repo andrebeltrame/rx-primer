@@ -20,7 +20,7 @@ function TemplateHeader() {
             <Header>
                <div className="container">
                     <Link to="/">
-                        <h1>Dashboard</h1>
+                        <h1>Jhana Low Carb</h1>
                     </Link>
                     <nav className="Menu">
 
