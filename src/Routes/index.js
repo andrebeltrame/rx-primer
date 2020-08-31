@@ -10,6 +10,8 @@ import PageNewRecipe from '../pages/new-recipe';
 import PageNewGroup from "../pages/new-group";
 import PageCategory from "../pages/category";
 import PostsPage from '../pages/posts';
+import NewPostPage from '../pages/new-post';
+import Post from '../pages/post';
 
 export default function MainRoutes() {
     return (
@@ -24,6 +26,8 @@ export default function MainRoutes() {
         <Route path="/new-recipe" element={<PageNewRecipe />} />
         <Route path="/new-group" element={<PageNewGroup />} />
         <Route path="/posts" element={<PostsPage />} />
+        <Route path="post/:id" element={<Post />} />
+        <Route path="/new-post" element={<NewPostPage />} />
       </Routes>
     );
 }

@@ -37,12 +37,9 @@ const PageNewRecipe = props => {
           <h2>Nova Receita</h2>
 
           <div className="row">
-            <div className="col col-4">
-              <Button className="ButtonSm ColorPrimary">Enviar Foto</Button>
-            </div>
-
-            <div className="col col-8">
-              <div className="col-12">
+        
+            <div className="col-12">
+              
                 <Input
                   value={recipeName}
                   onChange={(event) => setRecipeName(event.target.value)}
@@ -53,7 +50,7 @@ const PageNewRecipe = props => {
                 />
 
                 {recipeName}
-              </div>
+             
               <div className="row">
                 <div className="col col-6">
                   <Input
@@ -77,7 +74,7 @@ const PageNewRecipe = props => {
                   />
                 </div>
 
-                <div className="col-12">
+                <div className="col-12 mb-2">
                   <label>
                     <input
                       value="keepHome"
@@ -117,6 +114,7 @@ const PageNewRecipe = props => {
             </Tabs>
           </div>
           <h3>Galeria de Imagens</h3>
+          <p>A primeira imagem será usada para miniatura da receita.</p>
 
           <ImagesUploader />
 

@@ -42,7 +42,6 @@ ul, ol {
     margin-bottom: 20px;
 }
 
-
 .mt-2 {
     margin-top: 20px;
 }
@@ -326,4 +325,14 @@ select {
     padding: 3rem;
     border-radius: 5px;
     min-height: 300px;
+}
+
+.postsList {
+    list-style: none;
+    ;
+}
+
+.postsList li {
+    display: block;
+    margin: 0 0 40px 0;
 }

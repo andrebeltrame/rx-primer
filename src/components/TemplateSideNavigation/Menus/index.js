@@ -19,9 +19,6 @@ const SiteMenus = () => {
             <Link to="/users"> Usuários </Link>
           </li>
           <li>
-            <Link to="/groups"> Grupos </Link>
-          </li>
-          <li>
             <Link to="/recipes"> Receitas </Link>
           </li>
           <li>
