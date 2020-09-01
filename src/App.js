@@ -1,13 +1,18 @@
 import React from 'react';
 import TemplateBase from './TemplateBase';
+import LoginPage from './pages/login';
 
  
-function App() {
-  return (
-    <>
-      <TemplateBase/>
-    </>
-  );
+
+class App extends React.Component {
+
+  render() {
+    const Component = this.props.component;
+    const isAuthenticated = localStorage.getItem("token");
+    return isAuthenticated ? <TemplateBase /> : <LoginPage />;
+  }
 }
 
+
 export default App;
+

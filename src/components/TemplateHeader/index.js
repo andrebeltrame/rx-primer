@@ -15,6 +15,11 @@ function TemplateHeader() {
         setActiveMenu(!activeMenu);
     }
 
+     function logOut() {
+       localStorage.clear();
+       window.location.reload(false);
+     }
+
     return (
         <>
             <Header>
@@ -33,7 +38,7 @@ function TemplateHeader() {
                                 <Link to="/account"> Minha Conta </Link>
                             </li>
                             <li>
-                                <Link to="/account"> Sair  <SignOutIcon size={15} /> </Link>
+                                <a href="#" onClick={logOut}> Sair  <SignOutIcon size={15} /> </a>
                             </li>
                         </ul>
             

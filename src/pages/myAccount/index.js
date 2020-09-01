@@ -28,10 +28,6 @@ const MyAccount = () => {
           progress: undefined,
         });
 
-    
-
-  
-
     return (
       <Card className="no-border">
         <h2>Minha Conta</h2>

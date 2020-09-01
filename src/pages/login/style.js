@@ -26,7 +26,7 @@ export const LoginWrap = styled.section`
         width: 100%;
         padding:20px;
         background:#fff;
-        
+        box-shadow: 0 2px 40px 0 rgb(0 0 0 / 7%);        
     }
 
 `;
