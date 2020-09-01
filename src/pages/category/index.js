@@ -6,9 +6,22 @@ import { Overlay } from 'react-portal-overlay';
 import Input from '../../components/ui/Input';
 import { XIcon } from "@primer/octicons-react";
 import CategoriesList from "./style-list";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default () => {
   const [isOpen, setIsOpen] = useState(false);
+  const notify = () =>
+    toast.success("Seu post foi publicado!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
 
   return (
     <>
@@ -92,7 +105,7 @@ export default () => {
             <div className="col-md-12">
               <Button
                 className="btn ButtonMd ColorSecundary"
-                onClick={() => setIsOpen(false)}
+                onClick={ (() => setIsOpen(false))}
               >
                 Salvar e Fechar
               </Button>
@@ -100,6 +113,17 @@ export default () => {
           </div>
         </div>
       </Overlay>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 };
