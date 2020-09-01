@@ -20,6 +20,7 @@ const PageNewRecipe = props => {
     const [time, setTime] = React.useState('');
     const [qtd, setQtd] = React.useState('');
     const [isHome, setIsHome] = React.useState('');
+    const [liqdCal, setliqdCal] = React.useState('');
     //Tags
     const [valNutri, setValNutri] = React.useState('');
     const [stuff, setStuff] = React.useState('');
@@ -52,7 +53,7 @@ const PageNewRecipe = props => {
                 {recipeName}
              
               <div className="row">
-                <div className="col col-6">
+                <div className="col col-4">
                   <Input
                     value={time}
                     onChange={(event) => setTime(event.target.value)}
@@ -63,7 +64,7 @@ const PageNewRecipe = props => {
                   />
                 </div>
 
-                <div className="col col-6">
+                <div className="col col-4">
                   <Input
                     value={qtd}
                     onChange={(event) => setQtd(event.target.value)}
@@ -74,7 +75,21 @@ const PageNewRecipe = props => {
                   />
                 </div>
 
-                <div className="col-12 mb-2">
+
+                <div className="col col-4">
+                  <Input
+                    value={liqdCal}
+                    onChange={(event) => setliqdCal(event.target.value)}
+                    setValue={liqdCal}
+                    label="Carbos Líquidos"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-12 mb-3">
                   <label>
                     <input
                       value="keepHome"
@@ -88,6 +103,7 @@ const PageNewRecipe = props => {
                   </label>
                 </div>
               </div>
+
             </div>
           </div>
           <div className="row mb-2">

@@ -20,7 +20,7 @@ const Post = () => {
                 setLoading(false);
             }
         }
-        fetchProduto(`https://ranekapi.origamid.dev/json/api/produto/${id}`);
+        fetchProduto(`https://raw.githubusercontent.com/andrebeltrame/recipe-json/master/dicas.json?${id}`);
     }, [id]);
 
     if (loading) return <div className="loading"></div>;
