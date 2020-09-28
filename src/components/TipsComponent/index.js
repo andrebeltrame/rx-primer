@@ -53,8 +53,6 @@ class TipsList extends Component {
         }
 
 
-        console.log(dicas);
-
         return (
             
             <>

@@ -7,13 +7,15 @@ import { Link } from 'react-router-dom';
 const PageGroups = () => {
     return (
       <Card className="no-border">
-        <h2>Grupos</h2>
-        <Link to="/new-group">
-          <Button className=" btn ButtonMd ColorSecundary mb-2">
-            Novo Grupo
+        <div className="grid-row">
+          <h2>Grupos</h2>
+          <Link to="/new-group">
+            <Button className=" btn ButtonMd ColorSecundary mb-2">
+              Novo Grupo
           </Button>
-        </Link>
-
+          </Link>
+        </div>
+      
         <ListGroups edit="true" />
       </Card>
     );

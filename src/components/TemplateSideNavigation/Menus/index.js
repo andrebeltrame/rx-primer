@@ -7,16 +7,16 @@ const SiteMenus = () => {
       <>
         <ul>
           <li>
-            <Link to="/"> Inicio </Link>
+            <Link  to="/"> Inicio </Link>
           </li>
           <li>
             <Link to="/tips"> Dica da Jana </Link>
           </li>
           <li>
-            <Link to="/users"> Usuários </Link>
+            <Link to="/posts"> Publicações</Link>
           </li>
           <li>
-            <Link to="/groups"> Grupos </Link>
+            <Link to="/users"> Usuários </Link>
           </li>
           <li>
             <Link to="/articles"> Publicações </Link>

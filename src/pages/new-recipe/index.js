@@ -9,17 +9,19 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ImagesUploader  from '../../components/ui/ImageUploader'
 import TagsInput from "../../components/ui/TagsInput";
 import { PlusCircleIcon } from "@primer/octicons-react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import './style.css';
 
 const PageNewRecipe = props => {
-
 
     //Thumbnail
     const [recipeName, setRecipeName] = React.useState('');
     const [time, setTime] = React.useState('');
     const [qtd, setQtd] = React.useState('');
     const [isHome, setIsHome] = React.useState('');
+    const [liqdCal, setliqdCal] = React.useState('');
     //Tags
     const [valNutri, setValNutri] = React.useState('');
     const [stuff, setStuff] = React.useState('');
@@ -30,32 +32,39 @@ const PageNewRecipe = props => {
         console.log(tags);
     };
 
+    const notify = () =>
+      toast.success("Sua receita foi salva!", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+
+
 
     return (
-      <div>
+      <>
         <Card className="no-border">
           <h2>Nova Receita</h2>
 
           <div className="row">
-            <div className="col col-4">
-              <Button className="ButtonSm ColorPrimary">Enviar Foto</Button>
-            </div>
+            <div className="col-12">
+              <Input
+                value={recipeName}
+                onChange={(event) => setRecipeName(event.target.value)}
+                setValue={recipeName}
+                label="Nome da Receita"
+                type="text"
+                required
+              />
 
-            <div className="col col-8">
-              <div className="col-12">
-                <Input
-                  value={recipeName}
-                  onChange={(event) => setRecipeName(event.target.value)}
-                  setValue={recipeName}
-                  label="Nome da Receita"
-                  type="text"
-                  required
-                />
+              {recipeName}
 
-                {recipeName}
-              </div>
               <div className="row">
-                <div className="col col-6">
+                <div className="col col-4">
                   <Input
                     value={time}
                     onChange={(event) => setTime(event.target.value)}
@@ -66,7 +75,7 @@ const PageNewRecipe = props => {
                   />
                 </div>
 
-                <div className="col col-6">
+                <div className="col col-4">
                   <Input
                     value={qtd}
                     onChange={(event) => setQtd(event.target.value)}
@@ -77,7 +86,20 @@ const PageNewRecipe = props => {
                   />
                 </div>
 
-                <div className="col-12">
+                <div className="col col-4">
+                  <Input
+                    value={liqdCal}
+                    onChange={(event) => setliqdCal(event.target.value)}
+                    setValue={liqdCal}
+                    label="Carbos Líquidos"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-12 mb-3">
                   <label>
                     <input
                       value="keepHome"
@@ -117,6 +139,7 @@ const PageNewRecipe = props => {
             </Tabs>
           </div>
           <h3>Galeria de Imagens</h3>
+          <p>A primeira imagem será usada para miniatura da receita.</p>
 
           <ImagesUploader />
 
@@ -133,9 +156,22 @@ const PageNewRecipe = props => {
               <PlusCircleIcon size={30} />
             </button>
           </div>
-          <Button className="ButtonMd ColorSecundary">Salvar Receita</Button>
+          <Button onClick={notify} className="ButtonMd ColorSecundary">
+            Salvar Receita
+          </Button>
         </Card>
-      </div>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+      </>
     );
 }
 export default PageNewRecipe;

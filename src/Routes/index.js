@@ -9,8 +9,9 @@ import PageGroups from '../pages/groups';
 import PageNewRecipe from '../pages/new-recipe';
 import PageNewGroup from "../pages/new-group";
 import PageCategory from "../pages/category";
-import Articles from '../pages/articles';
-import PublicationItem from '../pages/publication';
+import PostsPage from '../pages/posts';
+import NewPostPage from '../pages/new-post';
+import Post from '../pages/post';
 
 export default function MainRoutes() {
     return (
@@ -22,10 +23,13 @@ export default function MainRoutes() {
         <Route path="/recipes" element={<PageRecipes />} />
         <Route path="/groups" element={<PageGroups />} />
         <Route path="/category" element={<PageCategory />} />
-        <Route path="/articles" element={<Articles />} />
-        <Route path="/publication" element={<PublicationItem />} />
+        {/* <Route path="/articles" element={<Articles />} />
+        <Route path="/publication" element={<PublicationItem />} /> */}
         <Route path="/new-recipe" element={<PageNewRecipe />} />
         <Route path="/new-group" element={<PageNewGroup />} />
+        <Route path="/posts" element={<PostsPage />} />
+        <Route path="post/:id" element={<Post />} />
+        <Route path="/new-post" element={<NewPostPage />} />
       </Routes>
     );
 }

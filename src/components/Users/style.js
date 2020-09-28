@@ -5,7 +5,7 @@ export const ListGroup = styled.ul`
   ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 5px;
@@ -14,7 +14,7 @@ export const ListGroup = styled.ul`
 
   @media (max-width: 780px) {
     ul {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -32,8 +32,8 @@ export const ListGroup = styled.ul`
   }
 
   .thumbnail {
-    width: 170px;
-    height: 170px;
+    width: 120px;
+    height: 120px;
     border-radius:100px;
     background-size: cover;
     background-repeat: no-repeat;
