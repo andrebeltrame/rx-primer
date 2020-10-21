@@ -16,12 +16,25 @@ import './style.css';
 
 const PageNewRecipe = props => {
 
-    //Thumbnail
+  
     const [recipeName, setRecipeName] = React.useState('');
     const [time, setTime] = React.useState('');
     const [qtd, setQtd] = React.useState('');
     const [isHome, setIsHome] = React.useState('');
     const [liqdCal, setliqdCal] = React.useState('');
+    const [valEnergy, setvalEnergy] = React.useState('');
+    const [valCarb, setValCarb] = React.useState('');
+    const [valCarbVd, setValCarbVd] = React.useState('');
+    const [valProtein, setValProtein] = React.useState('');
+    const [valTotalFat, setTotalFat] = React.useState('');
+    const [valSatFat, setSatFat] = React.useState('');
+    const [valTransFat, setTransFat] = React.useState('');
+    const [valTransFatVd, setTransFatVd] = React.useState('');
+    const [valFiber, setFiber] = React.useState('');
+    const [valFiberVd, setFiberVd] = React.useState('');
+    const [valSodium, setSodium] = React.useState('');
+    const [valSodiumVd, setSodiumVd] = React.useState('');
+
     //Tags
     const [valNutri, setValNutri] = React.useState('');
     const [stuff, setStuff] = React.useState('');
@@ -43,8 +56,6 @@ const PageNewRecipe = props => {
         progress: undefined,
     });
 
-
-
     return (
       <>
         <Card className="no-border">
@@ -63,8 +74,8 @@ const PageNewRecipe = props => {
 
               {recipeName}
 
-              <div className="row">
-                <div className="col col-4">
+              <div className="row mt-1">
+                <div className="col col-6">
                   <Input
                     value={time}
                     onChange={(event) => setTime(event.target.value)}
@@ -75,7 +86,7 @@ const PageNewRecipe = props => {
                   />
                 </div>
 
-                <div className="col col-4">
+                <div className="col col-6 ">
                   <Input
                     value={qtd}
                     onChange={(event) => setQtd(event.target.value)}
@@ -86,30 +97,17 @@ const PageNewRecipe = props => {
                   />
                 </div>
 
-                <div className="col col-4">
-                  <Input
-                    value={liqdCal}
-                    onChange={(event) => setliqdCal(event.target.value)}
-                    setValue={liqdCal}
-                    label="Carbos Líquidos"
-                    type="text"
-                    required
-                  />
-                </div>
+                
               </div>
 
-              <div className="row">
-                <div className="col-12 mb-3">
+              <div className="row mt-1">
+                <div className="col-12 mb-3 ">
                   <label>
-                    <input
-                      value="keepHome"
-                      onChange={(event) => setIsHome(event.target.value)}
-                      setValue={isHome}
-                      checked={isHome === "keepHome"}
-                      type="radio"
-                      id="keep-home"
-                    />
-                    <label for="keep-home">Manter esta receita na home</label>
+                    
+                    <label for="keep-home">
+                      
+                    <input  value={isHome}  onChange={(event) => setIsHome(event.target.value)} setValue={isHome} type="checkbox" />
+                      Manter esta receita na home</label>
                   </label>
                 </div>
               </div>
@@ -120,21 +118,75 @@ const PageNewRecipe = props => {
             <TagsInput selectedTags={selectedTags} tags={["Arroz", "Feijão"]} />
           </div>
 
-          <div className="row">
+          <div className="row tab-rows">
             <Tabs>
               <TabList>
-                <Tab>Informação Nutricional</Tab>
+                <Tab>Apresentação da Receita</Tab>
                 <Tab>Ingredientes</Tab>
+                <Tab>Dados Nutricionais</Tab>
               </TabList>
 
               <TabPanel>
                 <Editor
-                  wrapperClassName="demo-wrapper"
-                  editorClassName="demo-editor"
+                  wrapperClassName="wrapper"
+                  editorClassName="editor"
                 />
               </TabPanel>
               <TabPanel>
-                <Editor />
+
+              <Editor
+                  wrapperClassName="wrapper"
+                  editorClassName="editor"
+                />
+              
+              </TabPanel>
+              <TabPanel>
+              <div className="row mb-2 mt-2">
+              
+              <h3 className="mb-2">Dados nutricionais</h3>
+
+            <div className="col col-6">
+                  
+                  <Input
+                    value={liqdCal}
+                    onChange={(event) => setliqdCal(event.target.value)}
+                    setValue={liqdCal}
+                    label="Carbos Líquidos"
+                    type="text"
+                    required
+                  />
+              
+                </div>
+          </div>
+
+          <div className="row mb-3">
+            <div className="col col-3">
+             <Input
+                    label="Identificação"
+                    type="text"
+                    required
+                  />
+            </div>
+            <div className="col col-3">
+              <Input
+                    label="Valor Total"
+                    type="text"
+                    required
+                  />
+            </div>
+            <div className="col col-3">
+              <Input
+                    label="Valor %VD(*)"
+                    type="text"
+                    required
+                  />
+            </div>
+            <div className="col col-3">
+              <button className="mt-4 btn-base"> <PlusCircleIcon size={20} /> Adicionar novo</button>
+            </div>
+
+          </div>
+
               </TabPanel>
             </Tabs>
           </div>

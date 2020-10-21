@@ -28,6 +28,9 @@ export const LoginWrap = styled.section`
         background:#fff;
         box-shadow: 0 2px 40px 0 rgb(0 0 0 / 7%);        
     }
+    button {
+        margin:15px 0 0 0;
+    }
 
 `;
 
