@@ -1,4 +1,17 @@
-export const API_URL = 'https://dogsapi.origamid.dev/json';
+export const API_URL = 'https://api.jhanalowcarb.com';
+
+export function USER_AUTENTICATE (body) {
+    return {
+        url: API_URL + '/auth/admin',
+        options: {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+        },
+    };
+}
 
 export function TOKEN_POST(body) {
     return {

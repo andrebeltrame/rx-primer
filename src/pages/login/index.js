@@ -1,32 +1,46 @@
 import React from 'react'
 import LoginWrap from './style';
 import Input from '../../components/ui/Input';
+import useForm from '../../Hooks/useForm';
 import { Button } from '../../components/ui/Buttons';
-import { Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import { UserContext } from '../../UserContext';
+import Error from '../../Helper/Error';
 
 const LoginPage = () => {
 
-    function login() {
-      localStorage.setItem("token", 1);
-      window.location.reload(false);
+  const email = useForm();
+  const password = useForm();
+  const { userLogin, error, loading, login } = React.useContext(UserContext);
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    if (email.validate() && password.validate()) {
+      userLogin(email.value, password.value);
     }
-    return (
-      <LoginWrap>
-        <form className="my-login">
-          <h2>Entrar</h2>
-          <Input label="E-mail" type="text" required />
-          <Input label="Senha" type="text" required />
-          <Link to="/">
-            <Button
-              onClick={login}
-              className="btn ColorSecundary ButtonMd"
-            >
-              Login
-            </Button>
-          </Link>
-        </form>
-      </LoginWrap>
-    );
+  }
+
+     
+      if (login === true) return <Navigate to="/dashboard" />;
+        return (
+          <LoginWrap>
+            <form onSubmit={handleSubmit} className="my-login">
+                <h2>Entrar</h2> 
+                <Input label="Usuário" type="text" name="email" {...email} />
+                <Input label="Senha" type="password" name="password" {...password} />
+                
+                {loading ? (
+                  <Button disabled>Carregando...</Button>
+                ) : (
+                  <Button className="btn ColorSecundary ButtonMd">Entrar</Button>
+                )}
+                <Error error={error && 'Dados incorretos.'} />
+                
+              </form>
+              </LoginWrap>
+        );
+
 }
 
 export default LoginPage
