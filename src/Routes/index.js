@@ -16,7 +16,7 @@ import Post from '../pages/post';
 export default function MainRoutes() {
     return (
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/home" element={<Dashboard />} />
         <Route path="/account" element={<MyAccount />} />
         <Route path="/tips" element={<PageTips />} />
         <Route path="/users" element={<PageUsers />} />

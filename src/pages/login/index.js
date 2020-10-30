@@ -22,7 +22,7 @@ const LoginPage = () => {
   }
 
      
-      if (login === true) return <Navigate to="/dashboard" />;
+      if (login === true) return <Navigate to="/admin" />;
         return (
           <LoginWrap>
             <form onSubmit={handleSubmit} className="my-login">

@@ -42,7 +42,7 @@ export const UserStorage = ({ children }) => {
       window.localStorage.setItem('token', token);
      console.log(token);
       // setLogin(true);
-      navigate('/dashboard');
+      navigate('/admin');
       
     } catch (err) {
       setError(err.message);

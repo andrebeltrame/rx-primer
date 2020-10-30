@@ -10,22 +10,22 @@ const SiteMenus = () => {
             <Link  to="/"> Inicio </Link>
           </li>
           <li>
-            <Link to="/tips"> Dica da Jana </Link>
+            <Link to="/admin/tips"> Dica da Jana </Link>
           </li>
           <li>
-            <Link to="/posts"> Publicações</Link>
+            <Link to="/admin/posts"> Publicações</Link>
           </li>
           <li>
-            <Link to="/users"> Usuários </Link>
+            <Link to="/admin/users"> Usuários </Link>
           </li>
           <li>
-            <Link to="/recipes"> Receitas </Link>
+            <Link to="/admin/recipes"> Receitas </Link>
           </li>
           <li>
-            <Link to="/category"> Categorias </Link>
+            <Link to="/admin/category"> Categorias </Link>
           </li>
           <li>
-            <Link to="/account"> Minha Conta </Link>
+            <Link to="/admin/account"> Minha Conta </Link>
           </li>
         </ul>
       </>

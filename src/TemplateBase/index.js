@@ -1,9 +1,9 @@
 import React from 'react'
-import Routes from '../Routes';
 import TemplateFooter from '../components/TemplateFooter';
 import TemplateHeader from '../components/TemplateHeader';
 import { TemplateSideNavigation } from '../components/TemplateSideNavigation';
 import './style.css';
+import { Outlet } from 'react-router-dom';
 
 export default function TemplateBase() {
     return (
@@ -13,7 +13,7 @@ export default function TemplateBase() {
                     <div className="inner-container">
                     <TemplateSideNavigation/>
                         <div className="inner">
-                            <Routes />   
+                            <Outlet />
                         </div>
                     </div>
                 </main>
@@ -21,7 +21,3 @@ export default function TemplateBase() {
         </>
     )
 }
-
-
-
-
