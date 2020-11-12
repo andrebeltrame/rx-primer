@@ -23,24 +23,10 @@ const App = () => {
       <BrowserRouter>
         <UserStorage>
           <Routes>
+            <Route path="login/*" element={<LoginPage />} />
             <Route path="/" element={<LoginPage />} />
-            <ProtectedRoute path="/admin" element={<TemplateBase />}>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/account" element={<MyAccount />} />
-              <Route path="/tips" element={<PageTips />} />
-              <Route path="/users" element={<PageUsers />} />
-              <Route path="/recipes" element={<PageRecipes />} />
-              <Route path="/groups" element={<PageGroups />} />
-              <Route path="/category" element={<PageCategory />} />
-              {/* <Route path="/articles" element={<Articles />} />
-              <Route path="/publication" element={<PublicationItem />} /> */}
-              <Route path="/new-recipe" element={<PageNewRecipe />} />
-              <Route path="/new-group" element={<PageNewGroup />} />
-              <Route path="/posts" element={<PostsPage />} />
-              <Route path="post/:id" element={<Post />} />
-              <Route path="/new-post" element={<NewPostPage />} />
-            </ProtectedRoute>
-          </Routes>
+            <ProtectedRoute path="/admin/*" element={<TemplateBase />}/>
+            </Routes>
         </UserStorage>
       </BrowserRouter>
     </>

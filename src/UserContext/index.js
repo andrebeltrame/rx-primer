@@ -42,7 +42,7 @@ export const UserStorage = ({ children }) => {
       window.localStorage.setItem('token', token);
      console.log(token);
       // setLogin(true);
-      navigate('/admin');
+      navigate('admin');
       
     } catch (err) {
       setError(err.message);
@@ -56,18 +56,18 @@ export const UserStorage = ({ children }) => {
     async function autoLogin() {
       const token = window.localStorage.getItem('token');
       if (token) {
-        // try {
-        //   setError(null);
-        //   setLoading(true);
-        //   const { url, options } = TOKEN_VALIDATE_POST(token);
-        //   const response = await fetch(url, options);
-        //   if (!response.ok) throw new Error('Token inválido');
-        //   await getUser(token);
-        // } catch (err) {
-        //   userLogout();
-        // } finally {
-        //   setLoading(false);
-        // }
+        try {
+          setError(null);
+          setLoading(true);
+          // const { url, options } = TOKEN_VALIDATE_POST(token);
+          // const response = await fetch(url, options);
+          // if (!response.ok) throw new Error('Token inválido');
+           await getUser(token);
+        } catch (err) {
+        //  userLogout();
+        } finally {
+          setLoading(false);
+        }
         setLogin(true);
       } else {
         setLogin(false);

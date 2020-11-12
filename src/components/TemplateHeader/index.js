@@ -4,12 +4,13 @@ import { SignOutIcon, ThreeBarsIcon, PlusCircleIcon } from '@primer/octicons-rea
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/Buttons';
 import SiteMenus from '../TemplateSideNavigation/Menus';
+import { UserContext } from '../../UserContext';
 
 
-
-function TemplateHeader() {
+const TemplateHeader = () => {
 
     const [activeMenu, setActiveMenu] = React.useState(false);
+    const { userLogout } = React.useContext(UserContext);
 
     function showMenu() {
         setActiveMenu(!activeMenu);
@@ -38,7 +39,7 @@ function TemplateHeader() {
                                 <Link to="/account"> Minha Conta </Link>
                             </li>
                             <li>
-                                <a href="#" onClick={logOut}> Sair  <SignOutIcon size={15} /> </a>
+                                <a href="#" onClick={userLogout}> Sair  <SignOutIcon size={15} /> </a>
                             </li>
                         </ul>
             

@@ -9,7 +9,7 @@ import CategoriesList from "./style-list";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default () => {
+const CategoryPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const notify = () =>
     toast.success("Seu post foi publicado!", {
@@ -130,3 +130,4 @@ export default () => {
 
 
 
+export default CategoryPage;
